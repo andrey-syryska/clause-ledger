@@ -1,0 +1,5 @@
+{
+  "name": "clause-ledger",
+  "owner": { "name": "clause-ledger" },
+  "plugins": [{ "name": "clause-ledger", "source": "./" }]
+}
