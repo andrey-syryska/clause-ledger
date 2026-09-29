@@ -1,0 +1,199 @@
+{
+  "playbook_version": 1,
+  "owner": "",
+  "counsel_contact": "",
+  "notice": "Operator checklist against company positions. Not legal advice. Not a law firm. Illustration text is not policy.",
+  "positions": [
+    {
+      "id": "liability-cap",
+      "topic": "Limitation of liability",
+      "applies_to": ["msa", "sow", "order-form"],
+      "status": "draft-needs-counsel",
+      "preferred": "",
+      "acceptable": "",
+      "walk_away": "",
+      "ask_counsel_if": "",
+      "fallback_language": "",
+      "illustration": {
+        "note": "Delete this object after counsel fills the fields above. The checker never applies it.",
+        "preferred": "Mutual cap equal to fees paid or payable in the 12 months before the claim.",
+        "acceptable": "Same cap, with mutual carve-outs only for a party's own willful misconduct, bodily injury caused by that party, and infringement of third-party IP.",
+        "walk_away": "Cap below fees paid in the prior 3 months, a one-way cap that limits only one side, or no cap.",
+        "ask_counsel_if": "A data-breach carve-out has no separate sub-cap.",
+        "fallback_language": "Each party's total liability arising out of this agreement will not exceed the fees paid or payable under this agreement during the twelve months before the claim, except for liability that cannot be limited by law."
+      }
+    },
+    {
+      "id": "indemnity",
+      "topic": "Indemnity",
+      "applies_to": ["msa", "sow"],
+      "status": "draft-needs-counsel",
+      "preferred": "",
+      "acceptable": "",
+      "walk_away": "",
+      "ask_counsel_if": "",
+      "fallback_language": "",
+      "illustration": {
+        "note": "Illustration only.",
+        "preferred": "Mutual indemnity for third-party claims caused by the indemnifying party's negligence, willful misconduct, or IP infringement.",
+        "acceptable": "Vendor indemnifies for third-party IP infringement and for bodily injury caused by the vendor, with a notice and control procedure.",
+        "walk_away": "One-way indemnity that makes the customer cover the vendor's own negligence.",
+        "ask_counsel_if": "The indemnity is uncapped while the rest of the agreement has a cap.",
+        "fallback_language": "Each party will defend the other against third-party claims arising from the indemnifying party's negligence or willful misconduct, and will pay resulting damages finally awarded or agreed in a settlement the indemnified party approved."
+      }
+    },
+    {
+      "id": "breach-notice",
+      "topic": "Security incident notice",
+      "applies_to": ["msa", "dpa"],
+      "status": "draft-needs-counsel",
+      "preferred": "",
+      "acceptable": "",
+      "walk_away": "",
+      "ask_counsel_if": "",
+      "fallback_language": "",
+      "illustration": {
+        "note": "Illustration only.",
+        "preferred": "Vendor notifies the customer without undue delay, and no later than 72 hours after confirming an incident affecting customer data.",
+        "acceptable": "Notice as soon as practicable, with a hard stop of 5 business days after confirmation.",
+        "walk_away": "No notice obligation, or notice only if the vendor decides the customer needs to know.",
+        "ask_counsel_if": "The contract defines incident more narrowly than the company's security policy.",
+        "fallback_language": "Vendor will notify Customer without undue delay and within 72 hours after confirming a security incident that affects Customer data, and will include the known facts, the data involved, and the remediation steps underway."
+      }
+    },
+    {
+      "id": "deliverable-ip",
+      "topic": "Ownership of deliverables",
+      "applies_to": ["sow"],
+      "status": "draft-needs-counsel",
+      "preferred": "",
+      "acceptable": "",
+      "walk_away": "",
+      "ask_counsel_if": "",
+      "fallback_language": "",
+      "illustration": {
+        "note": "Illustration only.",
+        "preferred": "Customer owns deliverables created for the SOW on payment. Vendor keeps its pre-existing materials and grants a license to use them as part of the deliverable.",
+        "acceptable": "Customer gets a perpetual, irrevocable license to use the deliverables inside its business, including through contractors.",
+        "walk_away": "Vendor owns the deliverables and the license ends when the SOW ends.",
+        "ask_counsel_if": "The SOW mixes open-source components with a transfer of ownership.",
+        "fallback_language": "On payment, Customer owns the deliverables created specifically for this SOW. Vendor retains its pre-existing materials and grants Customer a non-exclusive license to use those materials as embedded in the deliverables."
+      }
+    },
+    {
+      "id": "acceptance",
+      "topic": "Acceptance of deliverables",
+      "applies_to": ["sow"],
+      "status": "draft-needs-counsel",
+      "preferred": "",
+      "acceptable": "",
+      "walk_away": "",
+      "ask_counsel_if": "",
+      "fallback_language": "",
+      "illustration": {
+        "note": "Illustration only.",
+        "preferred": "Customer has 10 business days to accept or reject a deliverable in writing, with reasons. Silence is not acceptance.",
+        "acceptable": "15 business days, and a failure to respond counts as acceptance only after a written reminder.",
+        "walk_away": "Deemed acceptance on delivery, or a review window shorter than 5 business days.",
+        "ask_counsel_if": "Acceptance is tied to payment of the entire SOW rather than the milestone.",
+        "fallback_language": "Customer may accept or reject a deliverable in writing within 10 business days after receipt. A rejection will state the failures against the SOW. Silence is not acceptance."
+      }
+    },
+    {
+      "id": "payment-terms",
+      "topic": "Payment terms",
+      "applies_to": ["msa", "sow", "order-form"],
+      "status": "draft-needs-counsel",
+      "preferred": "",
+      "acceptable": "",
+      "walk_away": "",
+      "ask_counsel_if": "",
+      "fallback_language": "",
+      "illustration": {
+        "note": "Illustration only.",
+        "preferred": "Net 45 from a correct invoice. Disputed amounts may be withheld. Undisputed amounts are paid on time.",
+        "acceptable": "Net 30, with the same dispute right.",
+        "walk_away": "Payment due on receipt, interest above the company's standard, or a right to suspend service for a good-faith dispute.",
+        "ask_counsel_if": "The vendor requires payment in advance for the full term.",
+        "fallback_language": "Customer will pay undisputed invoices within 45 days of receipt. Customer may withhold amounts it disputes in good faith while the parties resolve the dispute."
+      }
+    },
+    {
+      "id": "convenience-termination",
+      "topic": "Termination for convenience",
+      "applies_to": ["msa", "sow"],
+      "status": "draft-needs-counsel",
+      "preferred": "",
+      "acceptable": "",
+      "walk_away": "",
+      "ask_counsel_if": "",
+      "fallback_language": "",
+      "illustration": {
+        "note": "Illustration only.",
+        "preferred": "Customer may terminate the SOW for convenience on 30 days' notice and pays for work accepted through the end date.",
+        "acceptable": "Same right, plus payment for non-cancellable third-party costs the vendor committed before notice, if the vendor provides invoices.",
+        "walk_away": "No convenience right on a SOW longer than 3 months, or a termination fee above the remaining unused fees.",
+        "ask_counsel_if": "The MSA termination right does not flow down to an order form that auto-renews.",
+        "fallback_language": "Customer may terminate this SOW for convenience by written notice 30 days before the end date and will pay fees for deliverables accepted through that date."
+      }
+    },
+    {
+      "id": "auto-renewal",
+      "topic": "Auto-renewal",
+      "applies_to": ["msa", "order-form"],
+      "status": "draft-needs-counsel",
+      "preferred": "",
+      "acceptable": "",
+      "walk_away": "",
+      "ask_counsel_if": "",
+      "fallback_language": "",
+      "illustration": {
+        "note": "Illustration only.",
+        "preferred": "The order ends unless the customer renews in writing.",
+        "acceptable": "Auto-renewal for one year, cancellable until 30 days before renewal.",
+        "walk_away": "Renewal window shorter than 30 days, or a renewal price the vendor can set alone.",
+        "ask_counsel_if": "Renewal increases price by more than a named percent.",
+        "fallback_language": "This order renews only if Customer signs a renewal. It does not renew by silence."
+      }
+    },
+    {
+      "id": "governing-law",
+      "topic": "Governing law and venue",
+      "applies_to": ["msa"],
+      "status": "draft-needs-counsel",
+      "preferred": "",
+      "acceptable": "",
+      "walk_away": "",
+      "ask_counsel_if": "",
+      "fallback_language": "",
+      "illustration": {
+        "note": "Illustration only. Counsel has to name the company's actual state or country.",
+        "preferred": "Law and venue of the customer's home jurisdiction, written in by counsel.",
+        "acceptable": "A neutral US state the company's counsel has already named.",
+        "walk_away": "Vendor's home courts exclusive, or a country where the company has no counsel.",
+        "ask_counsel_if": "The clause includes a jury waiver or an arbitration mandate.",
+        "fallback_language": "This agreement is governed by the laws of [counsel inserts jurisdiction], and the state or federal courts located there have exclusive jurisdiction, excluding conflict-of-law rules."
+      }
+    },
+    {
+      "id": "insurance",
+      "topic": "Insurance",
+      "applies_to": ["msa"],
+      "status": "draft-needs-counsel",
+      "preferred": "",
+      "acceptable": "",
+      "walk_away": "",
+      "ask_counsel_if": "",
+      "fallback_language": "",
+      "illustration": {
+        "note": "Illustration only. Amounts belong to the company's risk team.",
+        "preferred": "Vendor carries commercial general liability, workers' compensation, and cyber coverage at limits the risk team writes here, and names the customer as required by that team.",
+        "acceptable": "The same coverages at the vendor's current limits, with a certificate before work starts.",
+        "walk_away": "No cyber coverage on a contract that handles customer personal data.",
+        "ask_counsel_if": "The vendor asks the customer to waive subrogation beyond what the risk team allows.",
+        "fallback_language": "Before work starts, Vendor will provide a certificate of insurance for the coverages and limits stated in the company's approved insurance schedule."
+      }
+    }
+  ],
+  "decisions": []
+}

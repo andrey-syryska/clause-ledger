@@ -1,0 +1,13 @@
+{
+  "name": "clause-ledger",
+  "version": "0.1.0",
+  "description": "Compare an MSA or SOW with your company's own clause playbook and return a procurement checklist. Not a law firm and not legal advice.",
+  "author": {
+    "name": "Andrey Syryska",
+    "url": "https://github.com/andrey-syryska"
+  },
+  "repository": "https://github.com/andrey-syryska/clause-ledger",
+  "homepage": "https://github.com/andrey-syryska/clause-ledger",
+  "license": "MIT",
+  "keywords": ["procurement", "msa", "sow", "playbook", "contracts"]
+}

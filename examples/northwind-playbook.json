@@ -1,0 +1,48 @@
+{
+  "playbook_version": 1,
+  "owner": "Northwind Outfitters procurement (fictional)",
+  "counsel_contact": "Ada Lovelace, sample counsel",
+  "notice": "Fictional sample. Not legal advice. Not a real company's policy.",
+  "positions": [
+    {
+      "id": "liability-cap",
+      "topic": "Limitation of liability",
+      "applies_to": ["msa"],
+      "status": "approved",
+      "preferred": "Mutual cap equal to fees paid or payable in the 12 months before the claim.",
+      "acceptable": "Same cap, with mutual carve-outs only for a party's own willful misconduct and bodily injury caused by that party.",
+      "walk_away": "Cap below fees paid in the prior 3 months, a one-way cap, or no cap.",
+      "ask_counsel_if": "A data-breach carve-out has no separate sub-cap.",
+      "fallback_language": "Each party's total liability arising out of this agreement will not exceed the fees paid or payable under this agreement during the twelve months before the claim, except for liability that cannot be limited by law.",
+      "illustration": {
+        "note": "Ignored because this position is approved."
+      }
+    },
+    {
+      "id": "payment-terms",
+      "topic": "Payment terms",
+      "applies_to": ["msa"],
+      "status": "draft-needs-counsel",
+      "preferred": "",
+      "acceptable": "",
+      "walk_away": "",
+      "ask_counsel_if": "",
+      "fallback_language": "",
+      "illustration": {
+        "note": "Illustration only. The sample check must not apply this.",
+        "preferred": "Net 45.",
+        "walk_away": "Due on receipt."
+      }
+    }
+  ],
+  "decisions": [
+    {
+      "id": "dec-20260901-liability-cap",
+      "position_id": "liability-cap",
+      "decider": "Ada Lovelace",
+      "date": "2026-09-01",
+      "source": "fictional redline",
+      "fallback_language": "Each party's total liability arising out of this agreement will not exceed the fees paid or payable under this agreement during the twelve months before the claim, except for liability that cannot be limited by law."
+    }
+  ]
+}
